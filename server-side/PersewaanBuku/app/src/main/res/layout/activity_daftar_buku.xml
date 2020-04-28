@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".DaftarBuku">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="DAFTAR BUKU"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:gravity="center"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="10dp"
+            android:layout_margin="12dp"
+            android:layout_gravity="center">
+
+            <LinearLayout
+                android:layout_width="400dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="16dp"/>
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="100dp"
+                android:src="@drawable/buku1"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="80dp"
+                    android:text="Judul Buku: 25 Kisah Nabi dan Rasul"
+                    android:textSize="15dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pengarang: Ust. Gibran Ar-Rasyid"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="80dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kategori: Buku Anak-Anak"
+                    android:layout_marginLeft="80dp"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="150dp"
+                    android:text="SEWA"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="10dp"
+            android:layout_margin="12dp"
+            android:layout_gravity="center">
+
+            <LinearLayout
+                android:layout_width="400dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="16dp"/>
+
+            <ImageView
+                android:layout_width="90dp"
+                android:layout_height="100dp"
+                android:src="@drawable/buku2"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="80dp"
+                    android:text="Judul Buku: Peetualangan di Puri Rajawali"
+                    android:textSize="15dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pengarang: Enid Blyton"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="80dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kategori: Buku Anak-Anak"
+                    android:layout_marginLeft="80dp"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="150dp"
+                    android:text="SEWA"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="10dp"
+            android:layout_margin="12dp"
+            android:layout_gravity="center"
+            android:id="@+id/puisi1">
+
+            <LinearLayout
+                android:layout_width="400dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="16dp"/>
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="100dp"
+                android:src="@drawable/buku3"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="80dp"
+                    android:text="Judul Buku: Buku Aktivitas Mengenal Hewan"
+                    android:textSize="15dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pengarang: Mariana Indriani"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="80dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kategori: Buku Anak-Anak"
+                    android:layout_marginLeft="80dp"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="150dp"
+                    android:text="SEWA"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</ScrollView>

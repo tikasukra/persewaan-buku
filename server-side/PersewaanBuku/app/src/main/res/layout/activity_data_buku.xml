@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DataBuku">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Data Buku"
+            android:textColor="#000"
+            android:textSize="15pt"
+            android:gravity="center"
+            android:layout_marginTop="10dp"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:elevation="10dp"
+                app:cardCornerRadius="10dp">
+
+                <Button
+                    android:id="@+id/btn_add"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="+ Add"
+                    android:textColor="#000"
+                    android:background="#fff"/>
+
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/gmbrbuku"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/kid"
+                    android:layout_alignParentLeft="true"/>
+
+                <TextView
+                    android:id="@+id/judulbuku"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Judul Buku :"
+                    android:layout_toRightOf="@+id/gmbrbuku"
+                    android:textSize="8pt"
+                    android:textColor="#000"/>
+
+                <TextView
+                    android:id="@+id/penerbit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Penerbit :"
+                    android:layout_toRightOf="@+id/gmbrbuku"
+                    android:layout_below="@+id/judulbuku"
+                    android:textSize="8pt"
+                    android:textColor="#000"/>
+
+                <TextView
+                    android:id="@+id/pengarang"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Pengarang :"
+                    android:layout_toRightOf="@+id/gmbrbuku"
+                    android:layout_below="@+id/penerbit"
+                    android:textSize="8pt"
+                    android:textColor="#000"/>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/btnedit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="10dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_below="@+id/pengarang"
+                    android:layout_toRightOf="@+id/gmbrbuku"
+                    android:elevation="10dp">
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Edit"
+                        android:textSize="8pt"
+                        android:textColor="#000"
+                        android:background="#fff"/>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="10dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_below="@+id/pengarang"
+                    android:layout_toRightOf="@+id/btnedit"
+                    android:elevation="10dp">
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Delete"
+                        android:textSize="8pt"
+                        android:textColor="#000"
+                        android:background="#fff"/>
+
+                </androidx.cardview.widget.CardView>
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/gmbrbuku2"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/kid"
+                    android:layout_alignParentLeft="true"/>
+
+                <TextView
+                    android:id="@+id/judulbuku2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Judul Buku :"
+                    android:layout_toRightOf="@+id/gmbrbuku2"
+                    android:textSize="8pt"
+                    android:textColor="#000"/>
+
+                <TextView
+                    android:id="@+id/penerbit2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Penerbit :"
+                    android:layout_toRightOf="@+id/gmbrbuku2"
+                    android:layout_below="@+id/judulbuku2"
+                    android:textSize="8pt"
+                    android:textColor="#000"/>
+
+                <TextView
+                    android:id="@+id/pengarang2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Pengarang :"
+                    android:layout_toRightOf="@+id/gmbrbuku2"
+                    android:layout_below="@+id/penerbit2"
+                    android:textSize="8pt"
+                    android:textColor="#000"/>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/btnedit2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="10dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_below="@+id/pengarang2"
+                    android:layout_toRightOf="@+id/gmbrbuku2"
+                    android:elevation="10dp">
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Edit"
+                        android:textSize="8pt"
+                        android:textColor="#000"
+                        android:background="#fff"/>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="10dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_below="@+id/pengarang2"
+                    android:layout_toRightOf="@+id/btnedit2"
+                    android:elevation="10dp">
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Delete"
+                        android:textSize="8pt"
+                        android:textColor="#000"
+                        android:background="#fff"/>
+
+                </androidx.cardview.widget.CardView>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</ScrollView>
