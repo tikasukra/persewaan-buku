@@ -5,7 +5,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".DataBuku">
+    tools:context=".DataBestBook">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -21,16 +21,16 @@
             android:layout_height="wrap_content">
 
             <ImageButton
-                android:id="@+id/back_dataBuku"
+                android:id="@+id/back_dataBestBook"
                 android:src="@drawable/arrow_back"
                 android:background="@color/cardview_shadow_end_color"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"/>
 
             <TextView
-                android:text="Kelola Data Buku"
+                android:text="Kelola Data Best Book"
                 android:textStyle="bold"
-                android:textSize="30sp"
+                android:textSize="25sp"
                 android:layout_marginRight="20dp"
                 android:textAlignment="center"
                 android:textColor="@android:color/white"
@@ -54,7 +54,7 @@
                 android:layout_height="wrap_content"/>
 
             <EditText
-                android:id="@+id/db_kodeBuku"
+                android:id="@+id/best_kodeBuku"
                 android:background="@drawable/input_form"
                 android:layout_marginTop="10dp"
                 android:paddingTop="10dp"
@@ -73,7 +73,7 @@
                 android:layout_height="wrap_content"/>
 
             <EditText
-                android:id="@+id/db_judulBuku"
+                android:id="@+id/best_judulBuku"
                 android:background="@drawable/input_form"
                 android:layout_marginTop="10dp"
                 android:paddingTop="10dp"
@@ -92,7 +92,7 @@
                 android:layout_height="wrap_content"/>
 
             <EditText
-                android:id="@+id/db_pengarang"
+                android:id="@+id/best_pengarang"
                 android:background="@drawable/input_form"
                 android:layout_marginTop="10dp"
                 android:paddingTop="10dp"
@@ -111,7 +111,7 @@
                 android:layout_height="wrap_content"/>
 
             <EditText
-                android:id="@+id/db_penerbit"
+                android:id="@+id/best_penerbit"
                 android:background="@drawable/input_form"
                 android:layout_marginTop="10dp"
                 android:paddingTop="10dp"
@@ -130,7 +130,26 @@
                 android:layout_height="wrap_content"/>
 
             <EditText
-                android:id="@+id/db_kategori"
+                android:id="@+id/best_kategori"
+                android:background="@drawable/input_form"
+                android:layout_marginTop="10dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:privateImeOptions="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:text="Sinopsis"
+                android:textSize="16dp"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/colorGray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/best_sinopsis"
                 android:background="@drawable/input_form"
                 android:layout_marginTop="10dp"
                 android:paddingTop="10dp"
@@ -149,7 +168,7 @@
                 android:layout_height="wrap_content"/>
 
             <EditText
-                android:id="@+id/db_status"
+                android:id="@+id/best_status"
                 android:background="@drawable/input_form"
                 android:layout_marginTop="10dp"
                 android:paddingTop="10dp"
@@ -158,6 +177,8 @@
                 android:privateImeOptions="20dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
+
+
 
             <Button
                 android:id="@+id/db_add"

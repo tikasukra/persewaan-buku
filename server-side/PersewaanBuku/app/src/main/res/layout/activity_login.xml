@@ -1,59 +1,91 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="20dp"
+    android:background="@color/colorBackground"
     tools:context=".LoginActivity">
 
-    <TextView
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginBottom="20dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="LOGIN"
-        android:textSize="22sp"
-        android:textColor="#000"
-        android:layout_marginTop="25dp"
-        android:gravity="center"/>
-    <androidx.cardview.widget.CardView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="25dp"
-        app:cardCornerRadius="10dp"
-        app:cardElevation="5dp">
+        android:layout_height="match_parent">
+
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:background="@drawable/bg_nota"
+            android:padding="20dp"
+            android:layout_margin="20dp"
             android:orientation="vertical"
-            android:padding="15dp">
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:src="@drawable/logo_admin"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:text="Login Admin"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/colorBackground"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
 
             <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:ems="10"
+                android:id="@+id/log_username"
                 android:hint="Username"
-                android:inputType="textPersonName" />
+                android:layout_marginTop="20dp"
+                android:background="@drawable/form_login"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:privateImeOptions="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
 
             <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:ems="10"
+                android:id="@+id/log_password"
                 android:hint="Password"
-                android:inputType="textPassword" />
+                android:layout_marginTop="20dp"
+                android:background="@drawable/form_login"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:privateImeOptions="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
 
             <Button
                 android:id="@+id/btn_login"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:text="L O G I N"
+                android:background="@drawable/btn_login"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
                 android:layout_marginTop="20dp"
-                android:background="#009688"
-                android:text="Login"
-                android:textColor="#fff"/>
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
 
         </LinearLayout>
-    </androidx.cardview.widget.CardView>
 
-</LinearLayout>
+
+    </LinearLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:itemBackground="@color/colorPrimaryDark"
+        app:itemTextColor="@drawable/selector"
+        app:itemIconTint="@drawable/selector"
+        app:menu="@menu/menu_navigation"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

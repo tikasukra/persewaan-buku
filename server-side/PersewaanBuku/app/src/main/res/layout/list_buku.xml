@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="10dp">
+
+    <RelativeLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/bb_gambar"
+            android:src="@drawable/buku1"
+            android:layout_width="90dp"
+            android:layout_height="140dp"/>
+        
+        <Button
+            android:id="@+id/bb_btnStatus"
+            android:layout_below="@id/bb_gambar"
+            android:layout_marginTop="10dp"
+            android:text="TERSEDIA"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:background="@drawable/btn_primary_dark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/bb_btnSewa"
+            android:layout_below="@id/bb_btnStatus"
+            android:layout_marginTop="5dp"
+            android:text="SEWA"
+            android:textStyle="bold"
+            android:background="@drawable/btn_yellow2"
+            android:textColor="@android:color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/bb_judul"
+            android:layout_toRightOf="@id/bb_gambar"
+            android:layout_marginLeft="10dp"
+            android:textSize="18sp"
+            android:text="Judul Buku"
+            android:textColor="@color/colorDarkGray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/bb_txtPengarang"
+            android:layout_below="@id/bb_judul"
+            android:layout_toRightOf="@id/bb_gambar"
+            android:layout_marginLeft="10dp"
+            android:text="Pengarang"
+            android:textColor="@color/colorDarkGray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/bb_txtPenerbit"
+            android:layout_toRightOf="@id/bb_gambar"
+            android:layout_below="@id/bb_txtPengarang"
+            android:layout_marginLeft="10dp"
+            android:text="Penerbit"
+            android:textColor="@color/colorDarkGray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/bb_txtSinopsis"
+            android:layout_below="@id/bb_txtPenerbit"
+            android:layout_toRightOf="@id/bb_gambar"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/colorDarkGray"
+            android:text="Sinopsis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/td1"
+            android:layout_toRightOf="@id/bb_txtPengarang"
+            android:layout_below="@id/bb_judul"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" : "/>
+
+        <TextView
+            android:id="@+id/td2"
+            android:layout_toRightOf="@id/bb_txtPengarang"
+            android:layout_below="@id/bb_txtPengarang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" : "/>
+
+        <TextView
+            android:id="@+id/td3"
+            android:layout_toRightOf="@id/bb_txtPengarang"
+            android:layout_below="@id/bb_txtPenerbit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" : "/>
+
+        <TextView
+            android:id="@+id/bb_pengarang"
+            android:layout_below="@id/bb_judul"
+            android:layout_toRightOf="@id/td1"
+            android:text="nama pengarang"
+            android:textColor="@color/colorDarkGray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/bb_penerbit"
+            android:layout_below="@id/bb_pengarang"
+            android:layout_toRightOf="@id/td1"
+            android:text="nama penerbit"
+            android:textColor="@color/colorDarkGray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/bb_sinopsis"
+            android:layout_below="@id/bb_penerbit"
+            android:layout_toRightOf="@id/td1"
+            android:text="sinopsis"
+            android:textColor="@color/colorDarkGray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

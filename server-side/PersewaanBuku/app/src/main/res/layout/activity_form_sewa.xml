@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
@@ -7,116 +7,190 @@
     android:layout_height="match_parent"
     tools:context=".FormSewa">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="FORM PENYEWAAN"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:background="@drawable/header_sewa"
+        android:orientation="horizontal"
         android:layout_gravity="center"
-        android:layout_marginTop="20sp"
-        android:textSize="20sp"/>
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
-    <androidx.cardview.widget.CardView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:cardCornerRadius="10dp"
-        android:layout_margin="12dp"
-        android:layout_gravity="center">
+        <ImageButton
+            android:id="@+id/back_sewa"
+            android:src="@drawable/arrow_back"
+            android:background="@color/cardview_shadow_end_color"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
 
-        <LinearLayout
-            android:layout_width="400dp"
-            android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:padding="16dp"/>
-
-        <EditText
+        <TextView
+            android:text="Rent Book"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:layout_marginRight="20dp"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="No Identitas"/>
-    </androidx.cardview.widget.CardView>
+            android:gravity="center_horizontal" />
 
-    <androidx.cardview.widget.CardView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:cardCornerRadius="10dp"
-        android:layout_margin="12dp"
-        android:layout_gravity="center">
+    </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="400dp"
-            android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:padding="16dp"/>
+    <LinearLayout
+        android:padding="30dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Nama"/>
-    </androidx.cardview.widget.CardView>
-
-    <androidx.cardview.widget.CardView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:cardCornerRadius="10dp"
-        android:layout_margin="12dp"
-        android:layout_gravity="center">
-
-        <LinearLayout
-            android:layout_width="400dp"
-            android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:padding="16dp"/>
+        <TextView
+            android:text="ID Book"
+            android:textSize="16dp"
+            android:textColor="@color/colorGray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
 
         <EditText
+            android:id="@+id/sw_idBuku"
+            android:background="@drawable/input_form"
+            android:layout_marginTop="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:privateImeOptions="20dp"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Alamat"/>
-    </androidx.cardview.widget.CardView>
+            android:layout_height="wrap_content"/>
 
-    <androidx.cardview.widget.CardView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:cardCornerRadius="10dp"
-        android:layout_margin="12dp"
-        android:layout_gravity="center">
-
-        <LinearLayout
-            android:layout_width="400dp"
-            android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:padding="16dp"/>
+        <TextView
+            android:text="Book's Title"
+            android:textSize="16dp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/colorGray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
 
         <EditText
+            android:id="@+id/sw_judulBuku"
+            android:background="@drawable/input_form"
+            android:layout_marginTop="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:privateImeOptions="20dp"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Tanggal Sewa"
-            android:inputType="date"/>
-    </androidx.cardview.widget.CardView>
+            android:layout_height="wrap_content"/>
 
-    <androidx.cardview.widget.CardView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:cardCornerRadius="10dp"
-        android:layout_margin="12dp"
-        android:layout_gravity="center">
-
-        <LinearLayout
-            android:layout_width="400dp"
-            android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:padding="16dp"/>
+        <TextView
+            android:text="Your ID Number"
+            android:textSize="16dp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/colorGray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
 
         <EditText
+            android:id="@+id/sw_IDuser"
+            android:background="@drawable/input_form"
+            android:layout_marginTop="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:privateImeOptions="20dp"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Tangal Kembali"
-            android:inputType="date"/>
-    </androidx.cardview.widget.CardView>
+            android:layout_height="wrap_content"/>
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Lanjut"
-        android:layout_marginTop="30dp"
-        android:layout_marginLeft="280dp"/>
+        <TextView
+            android:text="Your Name"
+            android:textSize="16dp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/colorGray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/sw_namaUser"
+            android:background="@drawable/input_form"
+            android:layout_marginTop="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:privateImeOptions="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="Adress"
+            android:textSize="16dp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/colorGray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/sw_alamatUser"
+            android:background="@drawable/input_form"
+            android:layout_marginTop="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:privateImeOptions="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="Borrow Date"
+            android:textSize="16dp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/colorGray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/sw_tglPinjam"
+            android:background="@drawable/input_form"
+            android:layout_marginTop="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:privateImeOptions="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="Date of Return"
+            android:textSize="16dp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/colorGray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/sw_tglKembali"
+            android:background="@drawable/input_form"
+            android:layout_marginTop="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:privateImeOptions="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/submit_sewa"
+            android:text="S U B M I T"
+            android:layout_marginTop="20dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:background="@drawable/btn_yellow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
 
 </LinearLayout>
+
+</ScrollView>

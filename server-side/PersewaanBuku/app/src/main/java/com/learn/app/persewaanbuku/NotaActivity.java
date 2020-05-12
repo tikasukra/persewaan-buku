@@ -6,51 +6,36 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.Button;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
-public class LoginActivity extends AppCompatActivity {
-
-    Button BtnLogin;
+public class NotaActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login);
-
-        BtnLogin =(Button)findViewById(R.id.btn_login);
-        BtnLogin.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent login = new Intent(LoginActivity.this,DashboardAdmin.class);
-                startActivity(login);
-            }
-        });
-
+        setContentView(R.layout.activity_nota);
 
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
-        bottomNavigationView.setSelectedItemId(R.id.admin);
+        bottomNavigationView.setSelectedItemId(R.id.nota);
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
                 switch (menuItem.getItemId()) {
                     case R.id.admin:
+                        startActivity(new Intent(getApplicationContext(), LoginActivity.class));
+                        overridePendingTransition(0,0);
                         return true;
                     case R.id.home:
                         startActivity(new Intent(getApplicationContext(), MainActivity.class));
                         overridePendingTransition(0,0);
                         return true;
                     case R.id.nota:
-                        startActivity(new Intent(getApplicationContext(), NotaActivity.class));
-                        overridePendingTransition(0,0);
                         return true;
                 }
                 return false;
             }
         });
-
 
     }
 }

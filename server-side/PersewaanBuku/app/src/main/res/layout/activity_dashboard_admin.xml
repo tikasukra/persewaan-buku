@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorBackground"
+    android:padding="20dp"
+    tools:context=".DashboardAdmin">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/mn_dataBuku"
+            android:text="DATA BUKU"
+            android:background="@drawable/btn_login"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/mn_bestBook"
+            android:text="DATA BEST BOOK"
+            android:background="@drawable/btn_login"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/mn_dataPeminjaman"
+            android:text="Data Peminjaman"
+            android:background="@drawable/btn_login"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/btn_logout"
+            android:text="L O G O U T"
+            android:background="@drawable/btn_red"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</LinearLayout>
